@@ -1,3 +1,3 @@
-cluster_name = "kent-demo"
-do_token = "a5d9e486a55a42d207af15fb9e45392664627f51fc02a14e6bcd6c9d87f354d3"
+cluster_name = "geoserver-demo"
+do_token = "36bfd30020cd096f2900e72cb67c2c99f37cd3a130335f967cabb2e6bdf7c66c"
 github_username = "ktjaco"
