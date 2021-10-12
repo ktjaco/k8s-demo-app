@@ -15,10 +15,10 @@ spec:
     targetRevision: 0.0.1
     helm:
       values: |
-        image:
-          registry: docker.io
-          repository: kartoza/geoserver
-          tag: 2.18.2
+        # image:
+        #  registry: docker.io
+        #  repository: kartoza/geoserver
+        #  tag: 2.18.2
         ingress:
           enabled: false
         hosts:
@@ -26,11 +26,11 @@ spec:
           paths: []
         resources:
           limits:
-            cpu: "1"
-            memory: 1Gi
+            cpu: "4"
+            memory: 8Gi
           requests:
-            cpu: "1"
-            memory: 1Gi
+            cpu: "4"
+            memory: 8Gi
   syncPolicy:
     automated:
       prune: true
