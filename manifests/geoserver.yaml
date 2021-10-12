@@ -15,10 +15,10 @@ spec:
     targetRevision: 0.0.1
     helm:
       values: |
-        # image:
-        #  registry: docker.io
-        #  repository: kartoza/geoserver
-        #  tag: 2.18.2
+        image:
+          registry: docker.io
+          repository: kartoza/geoserver
+          tag: 2.18.2
         ingress:
           enabled: false
         hosts:
