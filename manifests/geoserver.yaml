@@ -21,7 +21,7 @@ spec:
           tag: 2.18.2
         ingress:
           enabled: false
-    hosts:
+      hosts:
       - host: chart-example.local
         paths: []
         resources:
