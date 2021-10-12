@@ -21,9 +21,9 @@ spec:
           tag: 2.18.2
         ingress:
           enabled: false
-      hosts:
-      - host: chart-example.local
-        paths: []
+        hosts:
+        - host: chart-example.local
+          paths: []
         resources:
           limits:
             cpu: "1"
