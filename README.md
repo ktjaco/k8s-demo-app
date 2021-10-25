@@ -2,7 +2,7 @@
 
 **FORK THIS REPO**
 
- little repo to bootstrap a kubernetes cluster.
+A little repo to bootstrap a kubernetes cluster.
 
 **Steps:**
 1. Create a digital ocean account and get a doctl token.
