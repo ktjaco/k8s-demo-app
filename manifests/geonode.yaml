@@ -13,7 +13,7 @@ spec:
     # repoURL: https://statcan.github.io/charts
     repoURL: https://ktjaco.github.io/charts
     chart: geonode
-    targetRevision: 0.0.1
+    targetRevision: 0.1.1
     helm:
       values: |
         image:
