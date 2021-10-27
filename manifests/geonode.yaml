@@ -27,11 +27,11 @@ spec:
           paths: []
         resources:
           limits:
-            cpu: "4"
-            memory: 8Gi
+            cpu: "3"
+            memory: 6Gi
           requests:
-            cpu: "4"
-            memory: 8Gi
+            cpu: "3"
+            memory: 6Gi
   syncPolicy:
     automated:
       prune: true
