@@ -1,8 +1,8 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
-resources:
-- geonode.yaml
+resources: []
+# - geonode.yaml
 # - geoserver.yaml
 # - minio.yaml
 # - nginx.yaml
