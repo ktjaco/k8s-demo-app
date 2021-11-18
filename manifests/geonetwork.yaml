@@ -11,7 +11,7 @@ spec:
   source:
     repoURL: https://ktjaco.github.io/helm-charts
     chart: geonetwork
-    targetRevision: 0.1.2
+    targetRevision: 0.1.3
     helm:
       values: |
         image:
