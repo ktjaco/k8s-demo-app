@@ -1,0 +1,38 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: geonetwork
+  namespace: argocd
+spec:
+  project: default
+  destination:
+    namespace: default
+    server: https://kubernetes.default.svc
+  source:
+    repoURL: https://ktjaco.github.io/charts
+    chart: geonetwork
+    targetRevision: 0.1.1
+    helm:
+      values: |
+        image:
+          registry: docker.io
+          repository: ktjaco/daaas-geonetwork
+          tag: latest
+        ingress:
+          enabled: false
+        hosts:
+        - host: chart-example.local
+          paths: []
+        resources:
+          limits:
+            cpu: "3"
+            memory: 5.5Gi
+          requests:
+            cpu: "3"
+            memory: 5.5Gi
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+    - CreateNamespace=true
