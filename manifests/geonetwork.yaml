@@ -9,7 +9,7 @@ spec:
     namespace: default
     server: https://kubernetes.default.svc
   source:
-    repoURL: https://ktjaco.github.io/charts
+    repoURL: https://ktjaco.github.io/helm-charts
     chart: geonetwork
     targetRevision: 0.1.1
     helm:
