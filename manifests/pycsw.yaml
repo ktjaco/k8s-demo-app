@@ -16,13 +16,10 @@ spec:
       values: |
         image:
           registry: docker.io
-          repository: geopython/pycsw
-          tag: latest
+          repository: postgis/postgis
+          tag: 12-3.1
         ingress:
           enabled: false
-        hosts:
-        - host: chart-example.local
-          paths: []
         resources:
           limits:
             cpu: "2"
