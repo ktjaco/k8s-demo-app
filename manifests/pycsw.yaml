@@ -16,17 +16,14 @@ spec:
       values: |
         image:
           registry: docker.io
-          repository: postgis/postgis
-          tag: 12-3.1
+          repository: geopython/pycsw
+          tag: latest
         ingress:
           enabled: false
         resources:
           limits:
-            cpu: "2"
-            memory: 4Gi
-          requests:
-            cpu: "2"
-            memory: 4Gi
+            cpu: "1"
+            memory: 1Gi
   syncPolicy:
     automated:
       prune: true
